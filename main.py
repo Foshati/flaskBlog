@@ -8,5 +8,10 @@ def hello():
     return render_template("pages/index.html")
 
 
+@app.route("/about/")
+def about():
+    return "about"
+
+
 if __name__ == "__main__":
     app.run(debug=True)
